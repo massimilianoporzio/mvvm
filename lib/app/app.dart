@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mvvm/core/routes/routes_manager.dart';
 
 import '../core/presentation/resources/theme_manager.dart';
 
@@ -16,6 +17,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: getApplicationTheme(),
+      onGenerateRoute: RouteGenerator.getRoute,
+      initialRoute: Routes.splashRoute,
     );
   }
 }
