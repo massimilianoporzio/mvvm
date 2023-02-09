@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mvvm/core/presentation/resources/strings_manager.dart';
 import 'package:mvvm/features/login/presentation/pages/login_page.dart';
 import 'package:mvvm/features/main/presentation/pages/main_page.dart';
 import 'package:mvvm/features/splash/presentation/pages/splash_page.dart';
@@ -57,9 +58,9 @@ class RouteGenerator {
     return MaterialPageRoute(
       builder: (context) => Scaffold(
         appBar: AppBar(
-          title: const Text('No Route Found'),
+          title: const Text(AppStrings.noRouteFound),
         ),
-        body: const Center(child: Text('No Route Found')),
+        body: const Center(child: Text(AppStrings.noRouteFound)),
       ),
     );
   }
