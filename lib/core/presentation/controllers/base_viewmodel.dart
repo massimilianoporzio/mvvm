@@ -1,4 +1,4 @@
-abstract class BaseViewModel {
+abstract class BaseViewModel with BaseViewModelInput, BaseViewModelOutput {
   //*shared variables and methods used by any view model
   //HA UN INPUT E UN OUPUT
 }
